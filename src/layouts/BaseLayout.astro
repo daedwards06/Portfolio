@@ -1,0 +1,63 @@
+---
+import '../styles/global.css';
+
+type Props = {
+	title: string;
+	description?: string;
+	path?: string;
+};
+
+const { title, description, path } = Astro.props;
+
+const resolvedDescription = description ?? 'Portfolio site.';
+const siteUrl = Astro.site ?? new URL('https://daedwards06.github.io');
+const canonicalUrl = new URL(`${Astro.base}${path ?? '/'}`, siteUrl);
+const ogImageUrl = new URL(`${Astro.base}/og.png`, siteUrl);
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href={`${Astro.base}/favicon.svg`} />
+		<link rel="icon" href={`${Astro.base}/favicon.ico`} />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta name="description" content={resolvedDescription} />
+		<link rel="canonical" href={canonicalUrl.toString()} />
+
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={resolvedDescription} />
+		<meta property="og:url" content={canonicalUrl.toString()} />
+		<meta property="og:image" content={ogImageUrl.toString()} />
+
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={resolvedDescription} />
+		<meta name="twitter:image" content={ogImageUrl.toString()} />
+	</head>
+	<body>
+		<nav>
+			<a href={`${Astro.base}/`} aria-current={path === '/' ? 'page' : undefined}>Home</a>
+			<a
+				href={`${Astro.base}/project`}
+				aria-current={path === '/project' ? 'page' : undefined}
+			>
+				Project
+			</a>
+			<a href={`${Astro.base}/about`} aria-current={path === '/about' ? 'page' : undefined}>
+				About
+			</a>
+			<a
+				href={`${Astro.base}/contact`}
+				aria-current={path === '/contact' ? 'page' : undefined}
+			>
+				Contact
+			</a>
+		</nav>
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>

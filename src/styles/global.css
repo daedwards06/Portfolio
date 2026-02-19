@@ -1,0 +1,86 @@
+:root {
+	color-scheme: light dark;
+	--max-width: 980px;
+	--pad: 20px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+	line-height: 1.5;
+}
+
+a {
+	color: inherit;
+}
+
+main {
+	max-width: var(--max-width);
+	padding: var(--pad);
+	margin: 0 auto;
+}
+
+nav {
+	display: flex;
+	gap: 14px;
+	padding: var(--pad);
+	max-width: var(--max-width);
+	margin: 0 auto;
+}
+
+nav a {
+	text-decoration: none;
+	opacity: 0.9;
+}
+
+nav a[aria-current='page'] {
+	text-decoration: underline;
+	opacity: 1;
+}
+
+.header {
+	padding-top: 18px;
+	padding-bottom: 8px;
+}
+
+.muted {
+	opacity: 0.8;
+}
+
+.cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 16px;
+	margin-top: 16px;
+}
+
+.card {
+	border: 1px solid color-mix(in oklab, currentColor 18%, transparent);
+	border-radius: 10px;
+	padding: 16px;
+}
+
+.btnrow {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-top: 12px;
+}
+
+.btn {
+	display: inline-block;
+	padding: 8px 12px;
+	border-radius: 8px;
+	border: 1px solid color-mix(in oklab, currentColor 25%, transparent);
+	text-decoration: none;
+}
+
+.btn:hover {
+	opacity: 0.9;
+}

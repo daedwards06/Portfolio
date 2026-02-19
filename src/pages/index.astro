@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../siteConfig';
+---
+
+<BaseLayout
+	title={`${siteConfig.name} — Portfolio`}
+	description="Data science portfolio featuring MARS — My Anime Recommendation System."
+	path="/"
+>
+	<header class="header">
+		<h1>{siteConfig.name}</h1>
+		<p class="muted">{siteConfig.roleTagline}</p>
+		<div class="btnrow">
+			<a class="btn" href={`${Astro.base}/project`}>View MARS</a>
+			<a class="btn" href={siteConfig.links.github} target="_blank" rel="noreferrer">GitHub</a>
+			<a class="btn" href={siteConfig.links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
+		</div>
+	</header>
+
+	<section>
+		<h2>What I build</h2>
+		<ul>
+			<li>End-to-end ML systems with clean evaluation and clear tradeoffs</li>
+			<li>Recommendation and ranking pipelines with explainability</li>
+			<li>Data products with simple, reliable UIs for non-technical users</li>
+		</ul>
+	</section>
+</BaseLayout>

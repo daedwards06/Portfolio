@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../siteConfig';
+---
+
+<BaseLayout title="About" description="About Dominique Edwards." path="/about">
+	<header class="header">
+		<h1>About</h1>
+		<p class="muted">A little context on who I am and what I build.</p>
+	</header>
+
+	<p>
+		I’m {siteConfig.name}, a data scientist focused on building practical machine learning systems —
+		especially recommendation and ranking pipelines — and shipping them as usable products.
+	</p>
+
+	<h2>Skills</h2>
+	<ul>
+		<li>Python, SQL</li>
+		<li>Experiment design, evaluation, and metrics</li>
+		<li>Recommenders (CF, embeddings, hybrid pipelines)</li>
+		<li>Deployment-oriented apps (Streamlit) and clean codebases</li>
+	</ul>
+</BaseLayout>

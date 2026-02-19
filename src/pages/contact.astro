@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteConfig } from '../siteConfig';
+---
+
+<BaseLayout title="Contact" description="How to contact Dominique Edwards." path="/contact">
+	<header class="header">
+		<h1>Contact</h1>
+		<p class="muted">Best way to reach me is email.</p>
+	</header>
+
+	<ul>
+		<li>
+			Email:
+			<a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email}</a>
+		</li>
+		<li>
+			LinkedIn:
+			<a href={siteConfig.links.linkedin} target="_blank" rel="noreferrer">
+				{siteConfig.links.linkedin}
+			</a>
+		</li>
+	</ul>
+</BaseLayout>
