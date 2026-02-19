@@ -27,19 +27,19 @@ jobs:
           node-version: 20
           cache: npm
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Install
         run: npm ci
 
       - name: Build
         run: npm run build
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: ./dist
 
   deploy:
     needs: build

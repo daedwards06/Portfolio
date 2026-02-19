@@ -138,6 +138,10 @@ I’m deploying an Astro site to GitHub Pages for a repository named `portfolio`
 
 REQUIREMENTS:
 - Configure Astro so the built site works at https://daedwards06.github.io/portfolio/
+
+NOTE: If the repo is named `Portfolio` (capital P), GitHub Pages serves at:
+https://daedwards06.github.io/Portfolio/
+and Astro `base` must match that casing.
 - Ensure internal links and static assets work.
 - Document the exact config changes.
 
@@ -291,7 +295,7 @@ REQUIREMENTS:
 
 **Checklist:**
 - [x] Add a GitHub Actions workflow to build and deploy Astro to GitHub Pages
-- [ ] Confirm it deploys to `daedwards06.github.io/portfolio/`
+- [ ] Confirm it deploys to `daedwards06.github.io/Portfolio/`
 - [ ] Ensure the deployed site loads assets and routes correctly
 
 **Prompt for Copilot (GPT-5.2):**
