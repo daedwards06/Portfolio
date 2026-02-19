@@ -11,15 +11,17 @@ const { title, description, path } = Astro.props;
 
 const resolvedDescription = description ?? 'Portfolio site.';
 const siteUrl = Astro.site ?? new URL('https://daedwards06.github.io');
-const canonicalUrl = new URL(`${Astro.base}${path ?? '/'}`, siteUrl);
-const ogImageUrl = new URL(`${Astro.base}/og.png`, siteUrl);
+const base = import.meta.env.BASE_URL; // e.g. '/Portfolio/' on GitHub Pages
+const baseNoTrailing = base === '/' ? '' : base.replace(/\/$/, '');
+const canonicalUrl = new URL(`${baseNoTrailing}${path ?? '/'}`, siteUrl);
+const ogImageUrl = new URL(`${base}og.png`, siteUrl);
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href={`${Astro.base}/favicon.svg`} />
-		<link rel="icon" href={`${Astro.base}/favicon.ico`} />
+		<link rel="icon" type="image/svg+xml" href={`${base}favicon.svg`} />
+		<link rel="icon" href={`${base}favicon.ico`} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
@@ -39,18 +41,18 @@ const ogImageUrl = new URL(`${Astro.base}/og.png`, siteUrl);
 	</head>
 	<body>
 		<nav>
-			<a href={`${Astro.base}/`} aria-current={path === '/' ? 'page' : undefined}>Home</a>
+			<a href={base} aria-current={path === '/' ? 'page' : undefined}>Home</a>
 			<a
-				href={`${Astro.base}/project`}
+				href={`${base}project/`}
 				aria-current={path === '/project' ? 'page' : undefined}
 			>
 				Project
 			</a>
-			<a href={`${Astro.base}/about`} aria-current={path === '/about' ? 'page' : undefined}>
+			<a href={`${base}about/`} aria-current={path === '/about' ? 'page' : undefined}>
 				About
 			</a>
 			<a
-				href={`${Astro.base}/contact`}
+				href={`${base}contact/`}
 				aria-current={path === '/contact' ? 'page' : undefined}
 			>
 				Contact

@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { siteConfig } from '../siteConfig';
+
+const base = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout
@@ -12,7 +14,7 @@ import { siteConfig } from '../siteConfig';
 		<h1>{siteConfig.name}</h1>
 		<p class="muted">{siteConfig.roleTagline}</p>
 		<div class="btnrow">
-			<a class="btn" href={`${Astro.base}/project`}>View MARS</a>
+			<a class="btn" href={`${base}project/`}>View MARS</a>
 			<a class="btn" href={siteConfig.links.github} target="_blank" rel="noreferrer">GitHub</a>
 			<a class="btn" href={siteConfig.links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
 		</div>
