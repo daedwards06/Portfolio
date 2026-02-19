@@ -94,7 +94,7 @@ Keep it concise and professional.
 **Why:** A new repo avoids legacy theme constraints and makes the cutover clean.
 
 **Checklist:**
-- [ ] Create a new repo (e.g., `daedwards06/portfolio`)
+- [x] Create a new repo (e.g., `daedwards06/portfolio`)
 - [x] Scaffold an Astro site (choose a simple portfolio template)
 - [x] Add a projects content structure that scales (Astro Content Collections or a simple `src/content/projects/*.md` convention)
 - [x] Ensure local dev works (`npm install`, `npm run dev`)
@@ -281,6 +281,43 @@ REQUIREMENTS:
 - Show email and LinkedIn.
 - No contact form.
 - Minimal content.
+```
+
+---
+
+### Task 2.5: Visual Polish (CSS Theme + Readability)
+
+**Why:** The current styling is intentionally minimal and can feel “blank” (mostly black/white). Adding a small, consistent theme (surface colors, typography scale, button styles) makes the site look like a finished product.
+
+**Constraints:**
+- Keep the same 4-page UX (no new pages/sections).
+- Keep styling lightweight (plain CSS). Avoid adding Tailwind or a UI framework unless explicitly desired.
+
+**Checklist:**
+- [x] Define CSS tokens (CSS variables) for background/surface/text/accent
+- [x] Improve base typography (font sizes, headings, spacing)
+- [x] Improve navigation styling (active state, spacing)
+- [x] Improve button styling (primary vs secondary)
+- [x] Improve card styling (subtle background + border) while preserving accessibility
+- [x] Verify contrast/readability in dark mode and light mode
+
+**Prompt for Copilot (GPT-5.2):**
+
+```
+Polish the portfolio CSS so it looks modern and finished.
+
+CONTEXT:
+- Astro site with global styles in src/styles/global.css.
+- Pages: Home, Project, About, Contact.
+
+REQUIREMENTS:
+1) Add a small design token system via CSS variables: --bg, --surface, --text, --muted, --accent.
+2) Update nav, buttons, and cards to use the tokens.
+3) Keep it accessible: readable contrast and comfortable spacing.
+4) Do not add new pages or large new UI features.
+
+Deliver:
+- Updated src/styles/global.css and any tiny markup tweaks needed.
 ```
 
 ---

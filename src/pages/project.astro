@@ -26,7 +26,7 @@ const FeaturedContent = featured ? (await featured.render()).Content : null;
 
 			<div class="btnrow">
 				{featured.data.links?.demo ? (
-					<a class="btn" href={featured.data.links.demo} target="_blank" rel="noreferrer">
+					<a class="btn primary" href={featured.data.links.demo} target="_blank" rel="noreferrer">
 						Live demo
 					</a>
 				) : null}
