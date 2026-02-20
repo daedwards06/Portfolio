@@ -21,6 +21,15 @@ A hybrid recommendation engine combining collaborative filtering, content-based 
 - Multi-modal content signals: TF-IDF/SVD + neural sentence embeddings
 - Explainability and diversity controls in the UI
 
+## Results
+
+| Metric | Value | Notes |
+|--------|-------|-------|
+| NDCG@10 | **0.438** | Full-catalog ranking over 13K items (300-user temporal split); +43% lift over popularity baseline |
+| Catalog coverage | **0.18%** | Fraction of the 13K+ catalog surfaced in top-10 recommendations across evaluation users |
+| Diversity (Gini@10) | **0.50** | Gini index of item recommendation frequency; hybrid moderates the concentration seen in popularity-only models |
+| Cold-start NDCG@10 | **0.025** | Content-only (TF-IDF) scoring for users with no rating history; falls back to genre/popularity signals |
+
 ## Links
 
 - Demo: https://myanimerecommendationsystem-x6rqm6vqjmbr2ij8i8yk3b.streamlit.app

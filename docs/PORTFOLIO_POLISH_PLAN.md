@@ -67,9 +67,9 @@ FIX: Remove the entire <p>{featured.body.trim().split('\n')[0]}</p> block (3 lin
 **Why:** The MARS project page is the portfolio's centerpiece but currently lacks quantified results. Recruiters scan for measurable impact — coverage numbers, evaluation scores, dataset scale.
 
 **Checklist:**
-- [ ] Add a "Results" or "Evaluation" section to `src/content/projects/mars.md`
-- [ ] Include 3–4 key metrics from the MARS README (e.g., NDCG, catalog coverage, diversity score)
-- [ ] Format as a small table or bold callout list for scannability
+- [x] Add a "Results" or "Evaluation" section to `src/content/projects/mars.md`
+- [x] Include 3–4 key metrics from the MARS README (e.g., NDCG, catalog coverage, diversity score)
+- [x] Format as a small table or bold callout list for scannability
 
 **Prompt for Copilot:**
 
