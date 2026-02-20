@@ -332,7 +332,7 @@ Deliver:
 
 **Checklist:**
 - [x] Add a GitHub Actions workflow to build and deploy Astro to GitHub Pages
-- [ ] Confirm it deploys to `daedwards06.github.io/Portfolio/`
+- [x] Confirm it deploys to `daedwards06.github.io/Portfolio/`
 - [ ] Ensure the deployed site loads assets and routes correctly
 
 **Prompt for Copilot (GPT-5.2):**
