@@ -18,13 +18,16 @@ const sorted = projects.sort((a, b) => {
   </header>
 
   <div class="cards">
-    {sorted.map((project) => (
-      <a href={`${base}projects/${project.id}/`} class="project-card card">
+    {sorted.map((project) => {
+      const slug = project.id.replace(/\.[^/.]+$/, '');
+      return (
+      <a href={`${base}projects/${slug}/`} class="project-card card">
         <h2>{project.data.title}</h2>
         {project.data.tags.length > 0 && (
           <p class="muted" style="font-size: 0.85rem;">{project.data.tags.join(' · ')}</p>
         )}
       </a>
-    ))}
+      );
+    })}
   </div>
 </BaseLayout>
