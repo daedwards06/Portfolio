@@ -203,10 +203,10 @@ CONSTRAINTS:
 **Why:** Currently there is only `src/pages/project.astro`, a single page that finds the `featured` project and renders it. There is no route for individual projects by slug. When a second project is added, it has no page — Astro will ingest the markdown via content collections but there's no URL to visit it at.
 
 **Checklist:**
-- [ ] Create `src/pages/projects/[slug].astro` using Astro's `getStaticPaths` pattern
-- [ ] Each project renders its own page at `/projects/<slug>/`
-- [ ] Reuse the existing `.card`, `.btnrow`, `.btn` styles — no new CSS needed
-- [ ] Verify MARS is accessible at `/projects/mars/`
+- [x] Create `src/pages/projects/[slug].astro` using Astro's `getStaticPaths` pattern
+- [x] Each project renders its own page at `/projects/<slug>/`
+- [x] Reuse the existing `.card`, `.btnrow`, `.btn` styles — no new CSS needed
+- [x] Verify MARS is accessible at `/projects/mars/`
 
 **Prompt for Copilot:**
 
