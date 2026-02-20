@@ -372,9 +372,9 @@ NOTES:
 **Why:** The nav currently says "Project" (singular) and links to `/project/`. It needs to link to the new `/projects/` listing page and use the plural label.
 
 **Checklist:**
-- [ ] Change nav label from "Project" to "Projects"
-- [ ] Change nav href from `${base}project/` to `${base}projects/`
-- [ ] Update the `aria-current` path check from `/project` to `/projects`
+- [x] Change nav label from "Project" to "Projects"
+- [x] Change nav href from `${base}project/` to `${base}projects/`
+- [x] Update the `aria-current` path check from `/project` to `/projects`
 
 **Prompt for Copilot:**
 

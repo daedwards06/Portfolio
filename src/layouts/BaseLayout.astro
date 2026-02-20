@@ -43,10 +43,10 @@ const ogImageUrl = new URL(`${base}og.png`, siteUrl);
 		<nav>
 			<a href={base} aria-current={path === '/' ? 'page' : undefined}>Home</a>
 			<a
-				href={`${base}project/`}
-				aria-current={path === '/project' ? 'page' : undefined}
+				href={`${base}projects/`}
+				aria-current={path?.startsWith('/projects') ? 'page' : undefined}
 			>
-				Project
+				Projects
 			</a>
 			<a href={`${base}about/`} aria-current={path === '/about' ? 'page' : undefined}>
 				About
