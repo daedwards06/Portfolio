@@ -20,9 +20,6 @@ const FeaturedContent = featured ? (await featured.render()).Content : null;
 	{featured ? (
 		<article class="card">
 			<h2>{featured.data.title}</h2>
-			<p>
-				{featured.body.trim().split('\n')[0]}
-			</p>
 
 			<div class="btnrow">
 				{featured.data.links?.demo ? (

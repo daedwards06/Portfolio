@@ -28,9 +28,9 @@
 **Why:** The project page currently renders the first line of the MARS markdown body as a plain-text excerpt *and* then renders the full markdown content (which includes that same first line) below the `<hr>`. The opening paragraph appears twice.
 
 **Checklist:**
-- [ ] Remove the raw `featured.body.trim().split('\n')[0]` line from `src/pages/project.astro`
-- [ ] Replace it with `featured.data.title` context or remove the paragraph entirely (the `<FeaturedContent />` already renders everything)
-- [ ] Verify the project page renders cleanly with no repeated text
+- [x] Remove the raw `featured.body.trim().split('\n')[0]` line from `src/pages/project.astro`
+- [x] Replace it with `featured.data.title` context or remove the paragraph entirely (the `<FeaturedContent />` already renders everything)
+- [x] Verify the project page renders cleanly with no repeated text
 
 **Prompt for Copilot:**
 
