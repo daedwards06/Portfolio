@@ -30,6 +30,15 @@ A hybrid recommendation engine combining collaborative filtering, content-based 
 | Diversity (Gini@10) | **0.50** | Gini index of item recommendation frequency; hybrid moderates the concentration seen in popularity-only models |
 | Cold-start NDCG@10 | **0.025** | Content-only (TF-IDF) scoring for users with no rating history; falls back to genre/popularity signals |
 
+## Tech Stack
+
+- **Python** — core language
+- **pandas / NumPy** — data wrangling and numerical computation
+- **scikit-learn** — matrix factorization (FunkSVD), kNN, TF-IDF/SVD
+- **sentence-transformers** — neural sentence embeddings for content similarity
+- **Streamlit** — interactive web UI and deployment
+- **Jikan API** — MyAnimeList data sourcing
+
 ## Links
 
 - Demo: https://myanimerecommendationsystem-x6rqm6vqjmbr2ij8i8yk3b.streamlit.app

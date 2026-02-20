@@ -120,9 +120,9 @@ Do NOT change the frontmatter, the opening paragraph, "Why it stands out", or "L
 **Why:** A tech stack list makes the project's scope instantly clear and is highly scannable. Recruiters and hiring managers look for specific technologies.
 
 **Checklist:**
-- [ ] Add a "Tech Stack" section to `src/content/projects/mars.md`
-- [ ] Include: Python, pandas, scikit-learn, sentence-transformers, Streamlit, and any other key libraries
-- [ ] Keep it as a flat list or small grid — not paragraphs
+- [x] Add a "Tech Stack" section to `src/content/projects/mars.md`
+- [x] Include: Python, pandas, scikit-learn, sentence-transformers, Streamlit, and any other key libraries
+- [x] Keep it as a flat list or small grid — not paragraphs
 
 **Prompt for Copilot:**
 
