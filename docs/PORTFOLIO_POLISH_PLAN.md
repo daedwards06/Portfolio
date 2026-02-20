@@ -149,10 +149,10 @@ Do NOT change anything else in the file — only insert this new section in the 
 **Why:** The current About page is a single paragraph and a skills list. Adding a brief career trajectory and a "what I'm looking for" line makes it more personal and actionable for recruiters.
 
 **Checklist:**
-- [ ] Add 1–2 sentences about background / what drew you to data science
-- [ ] Add a line about domains of interest (recommendations, NLP, media/entertainment, etc.)
-- [ ] Add a closing line about what you're looking for (roles, industries)
-- [ ] Keep the professional tone — no fluff
+- [x] Add 1–2 sentences about background / what drew you to data science
+- [x] Add a line about domains of interest (recommendations, NLP, media/entertainment, etc.)
+- [x] Add a closing line about what you're looking for (roles, industries)
+- [x] Keep the professional tone — no fluff
 
 **Prompt for Copilot:**
 
