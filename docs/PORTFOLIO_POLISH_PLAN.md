@@ -296,10 +296,10 @@ NOTES:
 **Why:** There is no page that lists all projects. When there are 2+ projects, users need a browsable index. Even with one project, this page serves as the canonical "work" section.
 
 **Checklist:**
-- [ ] Create `src/pages/projects/index.astro`
-- [ ] List all projects from the content collection, sorted by date (newest first)
-- [ ] Each project renders as a card with title, summary (first line of body or a description field), tags, and links
-- [ ] Each card links to `/projects/[slug]/`
+- [x] Create `src/pages/projects/index.astro`
+- [x] List all projects from the content collection, sorted by date (newest first)
+- [x] Each project renders as a card with title, summary (first line of body or a description field), tags, and links
+- [x] Each card links to `/projects/[slug]/`
 
 **Prompt for Copilot:**
 

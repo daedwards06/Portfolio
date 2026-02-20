@@ -167,3 +167,18 @@ hr {
 ul {
 	padding-left: 18px;
 }
+
+a.project-card {
+  text-decoration: none;
+  display: block;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+a.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 36px color-mix(in oklab, CanvasText 14%, transparent);
+}
+
+a.project-card h2 {
+  margin-top: 0;
+}

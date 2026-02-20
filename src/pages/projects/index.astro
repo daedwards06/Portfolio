@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const base = import.meta.env.BASE_URL;
+const projects = await getCollection('projects');
+const sorted = projects.sort((a, b) => {
+  const da = a.data.date ?? '';
+  const db = b.data.date ?? '';
+  return db.localeCompare(da);
+});
+---
+
+<BaseLayout title="Projects" description="Data science projects by Dominique Edwards." path="/projects">
+  <header class="header">
+    <h1>Projects</h1>
+    <p class="muted">Case studies and technical work. New projects are added as markdown files.</p>
+  </header>
+
+  <div class="cards">
+    {sorted.map((project) => (
+      <a href={`${base}projects/${project.id}/`} class="project-card card">
+        <h2>{project.data.title}</h2>
+        {project.data.tags.length > 0 && (
+          <p class="muted" style="font-size: 0.85rem;">{project.data.tags.join(' · ')}</p>
+        )}
+      </a>
+    ))}
+  </div>
+</BaseLayout>
