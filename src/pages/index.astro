@@ -6,6 +6,7 @@ import { getCollection } from 'astro:content';
 const base = import.meta.env.BASE_URL;
 const projects = await getCollection('projects');
 const featured = projects.find((p) => p.data.featured) ?? projects[0];
+const featuredSlug = featured?.id.replace(/\.[^/.]+$/, '');
 ---
 
 <BaseLayout
@@ -18,7 +19,7 @@ const featured = projects.find((p) => p.data.featured) ?? projects[0];
 		<p class="muted">{siteConfig.roleTagline}</p>
 		<div class="btnrow">
 			{featured ? (
-				<a class="btn primary" href={`${base}projects/${featured.id}/`}>
+				<a class="btn primary" href={`${base}projects/${featuredSlug}/`}>
 					View {featured.data.title.split('—')[0].trim()}
 				</a>
 			) : (
