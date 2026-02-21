@@ -729,8 +729,8 @@ After both changes, run `npm run build` and verify that dist/Portfolio/sitemap-i
 **Why:** Signals to crawlers that the site is indexable. Standard best practice.
 
 **Checklist:**
-- [ ] Create `public/robots.txt`
-- [ ] Allow all crawlers, point to sitemap URL
+- [x] Create `public/robots.txt`
+- [x] Allow all crawlers, point to sitemap URL
 
 **Prompt for Copilot:**
 

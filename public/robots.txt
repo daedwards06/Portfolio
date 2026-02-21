@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://daedwards06.github.io/Portfolio/sitemap-index.xml
