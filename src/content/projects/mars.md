@@ -14,7 +14,7 @@ tags:
 
 A hybrid recommendation engine combining collaborative filtering, content-based similarity, and neural embeddings to recommend anime across a 13,000+ title catalog.
 
-![MARS demo — anime recommendation interface showing title search, hybrid score breakdown, and ranked results](/Portfolio/mars-demo.png)
+![MARS demo — anime recommendation interface showing title search, hybrid score breakdown, and ranked results](/mars-demo.png)
 
 ## Why it stands out
 
