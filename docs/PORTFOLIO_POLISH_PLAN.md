@@ -758,10 +758,10 @@ Do not create any other files or make any other changes.
 **Why:** A text-only project page undersells a project that has a live, visual Streamlit app. A screenshot breaks up the text and proves the system is real and deployed.
 
 **Checklist:**
-- [ ] Take a clean screenshot of the MARS Streamlit app
-- [ ] Save it to `public/mars-demo.png` (or similar)
-- [ ] Embed it in `src/content/projects/mars.md` with alt text
-- [ ] Optionally add a subtle image style (rounded corners, shadow) in `global.css`
+- [x] Take a clean screenshot of the MARS Streamlit app
+- [x] Save it to `public/mars-demo.png` (or similar)
+- [x] Embed it in `src/content/projects/mars.md` with alt text
+- [x] Optionally add a subtle image style (rounded corners, shadow) in `global.css`
 
 **Owner action required:** Capture or export the screenshot.
 

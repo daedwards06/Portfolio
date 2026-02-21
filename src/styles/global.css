@@ -201,3 +201,11 @@ footer a {
 footer a:hover {
   color: var(--accent);
 }
+
+.card img {
+  width: 100%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin: 8px 0 16px;
+  display: block;
+}
