@@ -684,9 +684,9 @@ siteConfig.links.github is already defined ('https://github.com/daedwards06') an
 **Why:** A sitemap helps search engines discover and index all pages. Astro has a first-party integration that takes minimal effort.
 
 **Checklist:**
-- [ ] Install `@astrojs/sitemap`
-- [ ] Add it to `astro.config.mjs` integrations
-- [ ] Verify `sitemap-index.xml` is generated in the build output
+- [x] Install `@astrojs/sitemap`
+- [x] Add it to `astro.config.mjs` integrations
+- [x] Verify `sitemap-index.xml` is generated in the build output
 
 **Prompt for Copilot:**
 
