@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Not Found" description="Page not found." path="/404">
+  <header class="header">
+    <h1>404</h1>
+    <p class="muted">Page not found.</p>
+  </header>
+
+  <p>The page you're looking for doesn't exist or has been moved.</p>
+
+  <div class="btnrow">
+    <a class="btn primary" href={base}>Back to Home</a>
+  </div>
+</BaseLayout>

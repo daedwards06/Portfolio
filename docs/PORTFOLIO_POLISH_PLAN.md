@@ -594,9 +594,9 @@ CONSTRAINTS:
 **Why:** If someone hits a bad URL on GitHub Pages they get the default GitHub 404. A custom 404 keeps them on-brand and gives them a way back.
 
 **Checklist:**
-- [ ] Create `src/pages/404.astro`
-- [ ] Use `BaseLayout` with a friendly message and a link back to Home
-- [ ] Keep it minimal
+- [x] Create `src/pages/404.astro`
+- [x] Use `BaseLayout` with a friendly message and a link back to Home
+- [x] Keep it minimal
 
 **Prompt for Copilot:**
 
