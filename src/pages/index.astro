@@ -1,8 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { siteConfig } from '../siteConfig';
+import { getCollection } from 'astro:content';
 
 const base = import.meta.env.BASE_URL;
+const projects = await getCollection('projects');
+const featured = projects.find((p) => p.data.featured) ?? projects[0];
 ---
 
 <BaseLayout
@@ -14,7 +17,13 @@ const base = import.meta.env.BASE_URL;
 		<h1>{siteConfig.name}</h1>
 		<p class="muted">{siteConfig.roleTagline}</p>
 		<div class="btnrow">
-			<a class="btn primary" href={`${base}project/`}>View MARS</a>
+			{featured ? (
+				<a class="btn primary" href={`${base}projects/${featured.id}/`}>
+					View {featured.data.title.split('—')[0].trim()}
+				</a>
+			) : (
+				<a class="btn primary" href={`${base}projects/`}>View Projects</a>
+			)}
 			<a class="btn" href={siteConfig.links.github} target="_blank" rel="noreferrer">GitHub</a>
 			<a class="btn" href={siteConfig.links.linkedin} target="_blank" rel="noreferrer">LinkedIn</a>
 		</div>
