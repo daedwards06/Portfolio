@@ -530,9 +530,9 @@ Do not create any redirect or replacement file. The nav already points to /proje
 **Why:** The site currently ends abruptly after the main content. A footer with name, year, and social links is a standard expectation and signals "finished product."
 
 **Checklist:**
-- [ ] Add a `<footer>` to `src/layouts/BaseLayout.astro` after `<main>`
-- [ ] Include: © 2026 Dominique Edwards, GitHub link, LinkedIn link
-- [ ] Style the footer in `src/styles/global.css` (subtle, muted text, top border)
+- [x] Add a `<footer>` to `src/layouts/BaseLayout.astro` after `<main>`
+- [x] Include: © 2026 Dominique Edwards, GitHub link, LinkedIn link
+- [x] Style the footer in `src/styles/global.css` (subtle, muted text, top border)
 
 **Prompt for Copilot:**
 
