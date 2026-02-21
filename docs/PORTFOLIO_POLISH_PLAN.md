@@ -638,8 +638,8 @@ NOTES:
 **Why:** The Contact page lists email and LinkedIn but omits GitHub — odd for a developer portfolio. The link is already in `siteConfig`.
 
 **Checklist:**
-- [ ] Add a GitHub list item to `src/pages/contact.astro`
-- [ ] Use `siteConfig.links.github`
+- [x] Add a GitHub list item to `src/pages/contact.astro`
+- [x] Use `siteConfig.links.github`
 
 **Prompt for Copilot:**
 
