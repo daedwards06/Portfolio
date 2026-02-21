@@ -426,9 +426,9 @@ Do NOT change the Home, About, or Contact links. Do NOT change anything else in 
 **Why:** The Home page CTA is hardcoded: `<a class="btn primary" href={`${base}project/`}>View MARS</a>`. This should dynamically reference the featured project and link to the new route.
 
 **Checklist:**
-- [ ] Make the CTA dynamically pull the featured project's title and slug
-- [ ] Link to `/projects/mars/` (or whichever project is featured)
-- [ ] If no featured project exists, link to `/projects/` as fallback
+- [x] Make the CTA dynamically pull the featured project's title and slug
+- [x] Link to `/projects/mars/` (or whichever project is featured)
+- [x] If no featured project exists, link to `/projects/` as fallback
 
 **Prompt for Copilot:**
 
@@ -501,9 +501,9 @@ CONSTRAINTS:
 **Why:** `src/pages/project.astro` is now replaced by `src/pages/projects/index.astro` (listing) and `src/pages/projects/[slug].astro` (individual). The old file should be removed to avoid a dead route.
 
 **Checklist:**
-- [ ] Delete `src/pages/project.astro`
-- [ ] Verify the build still succeeds (`npm run build`)
-- [ ] Verify `/projects/` and `/projects/mars/` work correctly
+- [x] Delete `src/pages/project.astro`
+- [x] Verify the build still succeeds (`npm run build`)
+- [x] Verify `/projects/` and `/projects/mars/` work correctly
 
 **Prompt for Copilot:**
 
